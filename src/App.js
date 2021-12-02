@@ -1,12 +1,16 @@
 import Index from './Route/Index';
 import './App.css';
-import { useRef } from 'react'
+import { useRef } from 'react';
+
+
 
 function App() {
   const ref = useRef(null);
   const aboutUsRef = useRef(null);
   const optionsButtonRef = useRef(null);
   const sortDownRef = useRef(null);
+  
+
 
   const handleHamburgerClick = (e) => {
     console.log({e, ref})
@@ -46,7 +50,7 @@ function App() {
     }
   }
   
-  return (
+    return (
     <div className="App">
       <Index 
       buttonRef={ref} 
@@ -56,7 +60,8 @@ function App() {
       handleOnclickMenuOptions={handleOnclickMenuOptions}
       optionsButtonRef={optionsButtonRef}
       sortDownRef={sortDownRef}
-      handleMobileOptionsbutton={handleMobileOptionsbutton}  />
+      handleMobileOptionsbutton={handleMobileOptionsbutton}
+    />
     </div>
   );
 }
