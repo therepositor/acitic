@@ -12,7 +12,7 @@ const Home = () => {
                 <p>Fostering Entrepreneurship and Enabling Startups through E2GF </p>
                 <div className="cta">
                     <Link className='cta-link learn-more' to='learn more'>Learn More</Link>
-                    <Link className='cta-link get-started' to='get started'>Get Started</Link>
+                    <Link className='cta-link get-started' to='/get_started'>Get Started</Link>
                 </div>
             </section>
             <article className='how-acitc-work'>
@@ -64,7 +64,7 @@ const Home = () => {
                 </div>
                 <div className="entrepreneurs-and-startup-image-container">
                     <img src='images/for_entrepreneurs.jpg' alt="entrepreneurship business opportunity meeting" />
-                    <Link className='cta-link register' to='get started'>Register</Link>
+                    <Link className='cta-link register' to='/get_started'>Register</Link>
                 </div>
             </section>
             <section className="stages">
@@ -73,13 +73,13 @@ const Home = () => {
                         <h3>Idea Stage</h3>
                         <p>Are you an aspiring entrepreneur with amazing business ideas?</p>
                         <p>Have a look at our amazing programs planned for you.</p>
-                        <Link to='/read more'>Read More</Link>
+                        <Link to='/idea-stage'>Read More</Link>
                     </div>
                     <div className="card">
                         <h3>Building Stage</h3>
                         <p>Do you have a startup or run a business successfully for a couple of years and thiking of the next step?</p>
                         <p></p>
-                        <Link to='/read more'>Read More</Link>
+                        <Link to='/build-stage'>Read More</Link>
                     </div>
                 </div>    
                 <h4>Our Entrepreneurship & Incubation Partners</h4>
