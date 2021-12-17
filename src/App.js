@@ -2,8 +2,6 @@ import Index from './Route/Index';
 import './App.css';
 import { useRef } from 'react';
 
-
-
 function App() {
   const ref = useRef(null);
   const aboutUsRef = useRef(null);
@@ -53,14 +51,14 @@ function App() {
     return (
     <div className="App">
       <Index 
-      buttonRef={ref} 
-      onClick={handleHamburgerClick}
-      handleOnClickAboutUs={handleOnClickAboutUs}
-      aboutUsRef={aboutUsRef}
-      handleOnclickMenuOptions={handleOnclickMenuOptions}
-      optionsButtonRef={optionsButtonRef}
-      sortDownRef={sortDownRef}
-      handleMobileOptionsbutton={handleMobileOptionsbutton}
+        buttonRef={ref} 
+        onClick={handleHamburgerClick}
+        handleOnClickAboutUs={handleOnClickAboutUs}
+        aboutUsRef={aboutUsRef}
+        handleOnclickMenuOptions={handleOnclickMenuOptions}
+        optionsButtonRef={optionsButtonRef}
+        sortDownRef={sortDownRef}
+        handleMobileOptionsbutton={handleMobileOptionsbutton}
     />
     </div>
   );

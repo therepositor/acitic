@@ -2,18 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCogs, faMoneyCheckAlt, faSearch, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCogs, faMoneyCheckAlt, faSearch, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+import ImageSlider from './ImageSlider';
+import { SliderData } from './SliderData';
 
 const Home = () => {
+    
     return (
         <div className='home'>
             <section className="banner">
-                <h1>The African and Carribbean Innovation <br /> and Technology Center (ACITC)</h1>
-                <p>Fostering Entrepreneurship and Enabling Startups through E2GF </p>
-                <div className="cta">
-                    <Link className='cta-link learn-more' to='learn more'>Learn More</Link>
-                    <Link className='cta-link get-started' to='/get_started'>Get Started</Link>
-                </div>
+                    <ImageSlider slides={SliderData} />
+                    
+                    {/* <div className="dots-container">
+                        <span className="dot"></span>
+                        <span className="dot"></span>
+                        <span className="dot"></span>
+                    </div>     */}
             </section>
             <article className='how-acitc-work'>
                 <h4>How Does ACITC Work?</h4>
