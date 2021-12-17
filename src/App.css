@@ -182,11 +182,103 @@ header .horizontal-navigation .options-menu .sort-down-icon {
 header .horizontal-navigation .options-menu .options-menu-button  {
   display: flex;
 }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+.slider-container .slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slider-container .active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition-duration: 1s;
+}
+.slider-container .slide {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slider-container .slide img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+
+}
+.slider-container .prev,
+.slider-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: #FDCC52;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+  background-color: #3F8A8A;
+  z-index: 10;
+}
+
+.slider-container .prev:hover,
+.slider-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slider-container .prev {
+  left: 10px;
+}
+
+.slider-container .next {
+  right: 10px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfd6ce;
+}
+
+.dots-container .dot.active {
+  border: 2px solid green;
+}
 .App .home .banner {
-  background:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./people_of_acitic.jpg');
+  background:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 11rem;
+  min-height: auto;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -197,12 +289,18 @@ header .horizontal-navigation .options-menu .options-menu-button  {
   line-height: 1.3rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  position: absolute;
+  top: 0rem;
 }
 .App .home .banner p {
   text-align: center;
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   color: #ffffff;
+  padding: 0 2rem;
+  position: absolute;
+  top: 5.5rem;
 }
 .App .home .how-acitc-work {
   background: #FDCC52;
@@ -815,7 +913,10 @@ footer  {
   justify-content: center;
   width: 100%;
 }
-
+.cta  {
+  position: absolute;
+  top: 8.7rem;
+}
 .cta-link {
   background-color: #3F8A8A;
   color: white;
@@ -1060,19 +1161,27 @@ header .horizontal-navigation .about-us-modal .about-us-navitem a {
     width: 100%;
   }
   .App .home .banner {
-    min-height: 16rem;
+    min-height: auto;
   }
   .App .home .banner h1 {
     text-align: center;
     line-height: 1.7rem;
     color: #ffffff;
     margin-bottom: 1rem;
+    top: 1rem;
   }
   .App .home .banner p {
     text-align: center;
     font-size: 1rem;
     margin-bottom: 2rem;
     color: #ffffff;
+    top: 7rem;
+  }
+  .cta  {
+    top: 10.5rem;
+  }
+  .slider-container .slide img {
+    height: 16rem;
   }
   .App .home .entrepreneurs-and-startups .entrepreneurs-and-startup-image-container .register,
   .App .idea-stage .entrepreneurs-and-startups .entrepreneurs-and-startup-image-container .register,
@@ -1379,16 +1488,24 @@ header .horizontal-navigation .about-us-modal .about-us-navitem a {
     padding: 2rem 10rem;
   }
   .App .home .banner {
-    min-height: 31rem;
+    height: auto;
     margin-bottom: 9rem;
+  }
+  .slider-container .slide img {
+    height: 31rem;
   }
   .App .home .banner h1 {
     font-size: 2.3rem;
     line-height: 1.1;
-    margin-top: -3rem;
+    margin-top: 0;
+    top: 5rem;
   }
   .App .home .banner p { 
     font-size: 1.1rem;   
+    top: 12rem;
+  }
+  .cta  {
+    top: 18rem;
   }
   .cta-link {
     font-size: 1rem;
