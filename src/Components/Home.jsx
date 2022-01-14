@@ -66,10 +66,10 @@ const Home = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="entrepreneurs-and-startup-image-container">
+                {/* <div className="entrepreneurs-and-startup-image-container">
                     <img src='images/for_entrepreneurs.jpg' alt="entrepreneurship business opportunity meeting" />
                     <Link className='cta-link register' to='/get_started'>Register</Link>
-                </div>
+                </div> */}
             </section>
             <section className="stages">
                 <div className="cards">

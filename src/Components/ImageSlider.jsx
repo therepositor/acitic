@@ -34,8 +34,8 @@ const ImageSlider = ({ slides }) => {
             <h1>The African and Carribbean Innovation <br /> and Technology Center (ACITC)</h1>
                     <p>Fostering Entrepreneurship and Enabling Startups through E2GF </p>
                     <div className="cta">
-                        <Link className='cta-link learn-more' to='learn more'>Learn More</Link>
-                        <Link className='cta-link get-started' to='/get_started'>Get Started</Link>
+                        <Link className='cta-link learn-more' to='/goals_&_executive_summary'>Learn More</Link>
+                        {/* <Link className='cta-link get-started' to='/get_started'>Get Started</Link> */}
                     </div>
         </div>
     )

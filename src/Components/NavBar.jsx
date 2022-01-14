@@ -86,13 +86,13 @@ const NavBar = ({buttonRef,
                 </span>              
             </div>
             <ul ref={optionsButtonRef} className="options-nav-menu">
-                    <li className="navitem">
+                    {/* <li className="navitem">
                         <Link className='options-nav-link' to='sign_in'
                         onClick={(e) => {
                             e.preventDefault();
                             window.location.assign('sign_in');
                         }}>Sign In</Link>
-                    </li>
+                    </li> */}
                     <li className="navitem">
                         <Link className='options-nav-link' to='profile'
                         onClick={(e) => {
@@ -114,13 +114,13 @@ const NavBar = ({buttonRef,
                             window.location.assign('alumni');
                         }}>Alumni</Link>
                     </li>
-                    <li className="navitem">
+                    {/* <li className="navitem">
                         <Link className='options-nav-link' to='log-out'
                         onClick={(e) => {
                             e.preventDefault();
                             window.location.assign('log-out')
                         }}>Log Out</Link>
-                    </li>
+                    </li> */}
                 </ul>
         </nav>
     )
